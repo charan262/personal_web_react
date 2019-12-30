@@ -2,7 +2,7 @@
     executors:
       docker:
         environment:
-          IMAGE_NAME: cherrydockersetup/charantest
+          IMAGE_NAME: cherrydockersetup/react
         docker:
           - image: circleci/buildpack-deps:stretch
     jobs:
