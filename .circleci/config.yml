@@ -2,7 +2,7 @@
     executors:
       docker:
         environment:
-          IMAGE_NAME: building-on-ci
+          IMAGE_NAME: react
         docker:
           - image: circleci/buildpack-deps:stretch
     jobs:
@@ -35,7 +35,7 @@
               command: |
                 echo "$DOCKER_PWD" | docker login -u "$DOCKER_USERNAME" --password-stdin
                 docker tag $IMAGE_NAME cherrydockersetup/react:v1
-                docker push $IMAGE_NAME:latest
+                docker push cherrydockersetup/$IMAGE_NAME:latest
     workflows:
       version: 2
       build-master:
