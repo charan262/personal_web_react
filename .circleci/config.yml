@@ -34,7 +34,7 @@
               name: Publish Docker Image to Docker Hub
               command: |
                 docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PWD" docker.io
-                # docker tag charan/react
+                docker tag reactimage cherrydockersetup/react
                 docker push $IMAGE_NAME:latest
     workflows:
       version: 2
