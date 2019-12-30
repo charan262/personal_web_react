@@ -3,6 +3,7 @@
       docker:
         environment:
           IMAGE_NAME: react
+          repo: cherrydockersetup
         docker:
           - image: circleci/buildpack-deps:stretch
     jobs:
@@ -34,8 +35,7 @@
               name: Publish Docker Image to Docker Hub
               command: |
                 echo "$DOCKER_PWD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-                docker tag $IMAGE_NAME cherrydockersetup/react:v1
-                docker push cherrydockersetup/$IMAGE_NAME:latest
+                docker push repo/$IMAGE_NAME:latest
     workflows:
       version: 2
       build-master:
