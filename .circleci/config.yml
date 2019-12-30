@@ -33,7 +33,7 @@
           - run:
               name: Publish Docker Image to Docker Hub
               command: |
-                echo "$DOCKER_PWD" | docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PWD"
+                echo "$DOCKER_PWD" | docker login -u "cherrydockersetup" -p "09Charan@262"
                 docker push $IMAGE_NAME:latest
     workflows:
       version: 2
