@@ -34,6 +34,7 @@
               name: Publish Docker Image to Docker Hub
               command: |
                 echo "$DOCKER_PWD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+                docker tag $IMAGE_NAME:latest $IMAGE_NAME:v1
                 docker push $IMAGE_NAME:latest
     workflows:
       version: 2
