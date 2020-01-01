@@ -84,3 +84,4 @@
                   only: /^v.*/
                 branches:
                   ignore: /.*/
+
