@@ -1,26 +1,85 @@
-.container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../constants/assets/car.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 1;
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../constants/assets/car.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 1;
+    }
+    .textStyle {
+      color: white;
+      font-size: 20px;
+    
+    }
+    .textStyle:hover {
+        color: #5F9EA0
+    } 
 }
-.layer1 {
+
+@media only screen and (min-width: 600px) {
+    .container {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../constants/assets/car.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 1;
+    }
+    .textStyle {
+      color: white;
+      font-size: 30px;
+    
+    }
+    .textStyle:hover {
+        color: #5F9EA0
+    } 
+
 
 }
-.imgStyle {
-    height: 40%;
-    width: 40%;
-    background: transparent;
-}
-.textStyle {
-  color: white;
-  font-size: 60px;
 
+ @media only screen and (min-width: 768px) {
+    .container {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../constants/assets/car.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 1;
+    }
+    .textStyle {
+      color: white;
+      font-size: 60px;
+    
+    }
+    .textStyle:hover {
+        color: #5F9EA0
+    }  
 }
-.textStyle:hover {
-    color: #5F9EA0
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../constants/assets/car.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 1;
+    }
+    .textStyle {
+      color: white;
+      font-size: 60px;
+    
+    }
+    .textStyle:hover {
+        color: #5F9EA0
+    }  
 }
