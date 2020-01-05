@@ -1,12 +1,13 @@
 @media only screen and (max-width: 600px) {
     .container {
-        height: 200px;
+        height: 100vh;
+        min-height: -webkit-fill-available;
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url("../constants/assets/car.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100% 100%;
         opacity: 1;
     }
     .textStyle {
@@ -21,13 +22,14 @@
 
 @media only screen and (min-width: 600px) {
     .container {
-        height: 400px;
+        height: 100vh;
+        min-height: -webkit-fill-available;
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url("../constants/assets/car.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100% 100%;
         opacity: 1;
     }
     .textStyle {
@@ -44,13 +46,14 @@
 
  @media only screen and (min-width: 768px) {
     .container {
-        height: 600px;
+        height: 100vh;
+        min-height: -webkit-fill-available;
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url("../constants/assets/car.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100% 100%;
         opacity: 1;
     }
     .textStyle {
