@@ -1,4 +1,26 @@
-.imgStyle{
-    height: 140px;
-    width: 140px;
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../constants/assets/car.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 1;
+}
+.layer1 {
+
+}
+.imgStyle {
+    height: 40%;
+    width: 40%;
+    background: transparent;
+}
+.textStyle {
+  color: white;
+  font-size: 60px;
+
+}
+.textStyle:hover {
+    color: #5F9EA0
 }
